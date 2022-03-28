@@ -8,17 +8,19 @@
     <title>Hoàng Anh Xin Chào!</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <script src="./fontawesome-kit.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="page-wrap" class="container">
+        
     <!-- START NAV -->
-
     <nav id="navbar" class="nav">
-        <ul class="nav-list">
+        <div class="btn-navbar-mobile" onclick=btnMobileClick()><span class="title-menu-mobile">Menu</span><i class="fa-solid fa-bars"></i></div>
+        <ul class="nav-list" id="navList-toggle">
             <li>
                 <a href="#welcome-section">Về Mình</a>
             </li>
@@ -125,6 +127,8 @@
     </footer>
 
     <!-- END FOOTER SECTION -->
+</div>
+<script src="./main.js"></script>
 </body>
 
 </html>
